@@ -1,11 +1,14 @@
-#include <stdio.h>
-int main(){
-   FILE * file;
-   if (file = fopen("helo.txt", "w")){
-      printf("File opened successfully in write mode or a new file is created");
-   }
-   else
-   printf("Error!");
-   fclose(file);
-   return 0;
+
+#include<stdio.h>
+int main() {
+    int intType;
+    float floatType;
+    double doubleType;
+    char char
+    printf("Size of int: %zu bytes\n", sizeof(intType));
+    printf("Size of float: %zu bytes\n", sizeof(floatType));
+    printf("Size of double: %zu bytes\n", sizeof(doubleType));
+    printf("Size of char: %zu byte\n", sizeof(charType));
+    
+    return 0;
 }
