@@ -1,14 +1,19 @@
+#include <iostream>
+using namespace std;
 
-#include<stdio.h>
 int main() {
-    int intType;
-    float floatType;
-    double doubleType;
-    char char
-    printf("Size of int: %zu bytes\n", sizeof(intType));
-    printf("Size of float: %zu bytes\n", sizeof(floatType));
-    printf("Size of double: %zu bytes\n", sizeof(doubleType));
-    printf("Size of char: %zu byte\n", sizeof(charType));
-    
+    int numbers[5] = {7, 5, 6, 12, 35};
+
+    cout << "The numbers are: ";
+    for (const int &n : numbers) {
+        cout << n << "  ";
+    }
+
+
+    cout << "\nThe numbers are: ";
+    for (int i = 0; i < 5; ++i) {
+        cout << numbers[i] << "  ";
+    }
+
     return 0;
 }
