@@ -1,19 +1,15 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-
-int main() {
-    int numbers[5] = {7, 5, 6, 12, 35};
-
-    cout << "The numbers are: ";
-    for (const int &n : numbers) {
-        cout << n << "  ";
-    }
-
-
-    cout << "\nThe numbers are: ";
-    for (int i = 0; i < 5; ++i) {
-        cout << numbers[i] << "  ";
-    }
-
-    return 0;
+int main()
+{
+	int n,sum=0;
+	cout<<"Enter number till which you would like to add";
+	cin>>n;
+	while(n>0)
+	{
+		sum+=n;
+		n--;
+	}
+	cout<<"\n sum is:"<<sum;
+	return 0;
 }
